@@ -77,7 +77,7 @@ let person={
 }
 let car={
     brand:'TATA',
-    model:'SAFARI',
+    model:'PUNCH',
 }
 
 
