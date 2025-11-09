@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stl.css">
+</head>
+<body>
+    <div class="slide-c">
+        <div class="slide">
+            <img src="C:\Users\Ambure Sowmya\Desktop\webpage\OIP.jpeg" alt="">
+            <div class="caption">Captiontext</div>
+        </div>
+
+        <div class="slide">
+            <img src="C:\Users\Ambure Sowmya\Desktop\webpage\sld.jpeg" alt="">
+            <div class="caption">Captiontext</div>
+        </div>
+
+        <div class="slide">
+            <img src="C:\Users\Ambure Sowmya\Desktop\webpage\sld2.jpeg" alt="">
+            <div class="caption">Captiontext</div>
+        </div>
+    </div>
+<span class="lefta" onclick="controller(-1)">&#10094; </span>
+<span class="righta" onclick="controller(1)">&#10095;</span>
+<script>
+    let flag=2;
+    function controller(x){
+        flag=flag+x;
+        slideshow(flag);
+
+    }
+    slideshow(flag);
+    function slideshow(num){
+        let slides=document.getElementsByClassName('slide');
+       slides[num].setAttribute('style','display:block'); 
+      //  console.log(slides);
+     // slides[num].style.display="block";
+    }
+</script>
+   
+    
+</body>
+</html>

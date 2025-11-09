@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+        }
+        body{
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" ></div>
+    <form action="">
+        <input type="text" id="myip">
+    </form>
+   
+    <script>
+       let r=document.getElementById("myip");
+       r.addEventListener('focus',function myffu(){
+         r.style.cssText="background-color:yellow";
+       });
+       r.addEventListener('blur',function mybfu(){
+         r.style.cssText="background-color:black";
+       });
+       r.addEventListener('change',function(){
+        console.log(this.value);
+       });
+       r.addEventListener('input',function() {
+        console.log(this.value);
+       });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-sacle=0.1">
+        <title>DOcument</title>
+        <style>
+            #btn{
+                background-color:violet;
+            }
+            .color{
+                background-color:grey;
+                color:red;
+            }
+            .dim{
+                border:1px solid green;
+                padding: 100px;
+            }
+            </style>
+    </head>
+    <body>
+        
+        
+        
+        <ul id="menu">
+            <li>home</li>
+            <li>Aboutus</li>
+            <li>Product</li>
+        </ul>
+        <div id="intro" class="color">
+            <p id="para">hiiii</p>
+        </div>
+        <button id="btn" style="color:red" onclick="bg()">send</button>
+        <script>
+
+            let bt=document.getElementById("btn");
+           // bt.setAttribute("name","form1");
+            //let v=bt.getAttribute("name");
+            //console.log(v);
+            //bt.removeAttribute("name");
+            //let r=bt.hasAttribute("name");
+            //console.log(r);
+          //  bt.style.cssText="background-color:red; color:white"; 
+               // bt.setAttribute('style','color:red');
+          //  bt.style.background-color="grey";
+         //    bt.style.color="red";
+           // bt.style.cssText="background-color:red;border:10px solid green"
+           // let r=getComputedStyle(bt);
+            //console.log(r);
+            let box=document.getElementById("intro");
+            
+            
+            //let width=box.offsetWidth;
+            //console.log(width);
+          //  let height=box.clientHeight;
+            //console.log(height);
+            //let width=box.clientWidth;
+            //console.log(width);
+           // bt.addEventListener('click',function(){
+             //   alert('btn was clicked');
+            //});
+            function bg(){
+                alert("btn was clicked");
+            }
+           // bt.addEventListener('mouseover',function(){
+             //   console.log('mouse over is activated');
+            //});
+            //bt.addEventListener('mouseout',function(){
+              //  console.log('mouse out is activated');
+            //});
+            bt.addEventListener('click',click1);
+            bt.addEventListener('click',click2);
+            function click1(){
+                console.log('click1 is activated');
+            }
+            function click2(){
+                console.log('click2 is activated');
+            }
+            bt.removeEventListener('click',click2);
+
+
+        </script>
+
+
+
+        
+        
+</body>
+</html>
